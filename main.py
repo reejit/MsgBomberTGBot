@@ -469,7 +469,7 @@ def delay(update, context):
 run_async
 def error(update, context):
     """Log Errors caused by Updates."""
-    logger.warning('Update "%s" caused error "%s"', update, context.error)
+    logging.warning('Update "%s" caused error "%s"', update, context.error)
 
 run_async
 def cancel(update, context):
