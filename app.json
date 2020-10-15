@@ -9,7 +9,7 @@
     "manager",
     "3"
   ],
-  "repository": "https://github.com/reejit/Filterbot",
+  "repository": "https://github.com/reejit/MsgBomberTGBot",
   "stack": "container",
   "env": {
     "ENV": {
