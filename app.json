@@ -1,42 +1,30 @@
 {
-  "name": "TG SMS Bomber",
-  "description": "[MsgBomt",
-  "logo": "https://telegra.ph/file/2c8ef3caf31680cc16a83.png",
-  "keywords": [
-    "telegram",
-    "bot",
-    "prank",
-    "fun",
-    "bomber"
-  ],
-  "repository": "https://github.com/reejit/MsgBomberTGBot",
+  "name": "Livegrm",
+  "description": "Notng",
   "stack": "container",
   "env": {
     "BOT_TOKEN": {
-      "description": "The bot-token which you can get from @Botfather",
+      "description": "Get this value from my.telegram.org.",
       "required": true
     },
     "AUTH_USERS": {
-      "description": "There is no measure to limit who can use this bot, so add userids of users authorized to use this bot",
-      "required": true
-    },
-    "NO_BOMB_NUMS": {
-      "description": "Add numbers below who shouldn't be bombed ever",
+      "description": "Get this value from my.telegram.org.",
       "required": true
     },
     "GOD_USERS": {
-      "description": "Add userids below of users who should have sudo authority over bot, i.e., have no bombing limits",
+      "description": "",
       "required": true
     },
-    "ENV": {
-      "description": "Setting this to ANYTHING will enable VARs when in ENV mode",
-      "value": "ANYTHING"
-      "required": true
+    "SUDO_USERS": {
+      "description": "1229057875",
+      "value": false
+    },
+    "CHAT_ID": {
+      "description": "-1001325620856",
+      "value": false
     }
   },
-  "addons": [
-  ],
-  "buildpacks": [{
+    "buildpacks": [{
     "url": "heroku/python"
   }],
   "formation": {
