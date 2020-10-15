@@ -9,7 +9,7 @@
     "manager",
     "3"
   ],
-  "repository": "https://github.com/reejit/MsgBomberTGBot",
+  "repository": "https://github.com/reejit/Filterbot",
   "stack": "container",
   "env": {
     "ENV": {
@@ -20,11 +20,11 @@
       "description": "Your bot token, as a string.",
       "value": ""
     },
-    "AUTH_USERS": {
+    "OWNER_USERS": {
       "description": "An integer of consisting of your owner ID",
       "value": "861055237"
     },
-    "NO_BOMB_NUMS": {
+    "AUTH_USERS": {
       "description": "Telegraph img url For Start Cmd",
       "value": ""
     },
@@ -86,17 +86,11 @@
     }
   },
   "addons": [
-  ],
-  "buildpacks": [{
-    "url": "heroku/python"
- }],
     {
       "plan": "heroku-postgresql",
-      "formation": {
-        "worker": {
-         "quantity": 1,
-         "size": "free",
+      "options": {
+        "version": "12"
       }
     }
-   ]
- }
+  ]
+}
